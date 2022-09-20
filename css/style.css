@@ -141,6 +141,7 @@ main{
     padding: 5rem 0;
 }
 
+
 .arrow{
     font-size: 1.5rem;
     font-weight: bold;
@@ -181,15 +182,17 @@ main{
 }
 /* Testimonials */
 #Testimonials img{
-    width: 12rem;
-    height: 12rem;
-    border-radius: 50%;
+    height: 150px;
+    width:150px;
+    border-radius:50%;
+    object-fit: cover;
 }
 .card3 h2{
     color: var(--purple);
 }
 .card3 h3{
     color: var(--purple);
+    font-size: 1.5rem;
 }
 .card3 a{
     background-color: var(--purple);
@@ -200,6 +203,10 @@ main{
 }
 #Testimonials{
     margin-bottom: 6rem;
+}
+#Features h2{
+ font-size: 2rem;
+ padding-bottom: 1rem;
 }
 .more{
     padding-top: 3rem;
@@ -259,6 +266,8 @@ h2.ar{
 .giuu{
     padding: 3rem 0;
 }
+
+
 /* footer */
 footer{
     background-color: var(--grey);
@@ -266,6 +275,13 @@ footer{
 }
 footer p{
     padding: 3rem 0;
+}
+footer div{
+    text-align: center;
+}
+footer a{
+    color: var(--purple);
+    text
 }
 /* responsive */
 @media screen and (min-width:768px){
