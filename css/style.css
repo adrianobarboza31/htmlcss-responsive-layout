@@ -10,6 +10,7 @@
     padding: 0;
     margin:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Open Sans', sans-serif; ;
@@ -32,7 +33,10 @@ body{
     align-items: center;
 }
 div.planning p{
-    padding-bottom: 2rem;
+    
+}
+div.card2 {
+    margin-top: 2rem;
 }
 div.planning h2{
     font-size: 3rem;
@@ -43,6 +47,13 @@ header{
     background-color: var(--blue);
     color: var(--white);
     padding: 1rem 2rem;
+    position: fixed;
+    width: 100vw;
+   padding-top: 15px;
+   
+}
+.fixed{
+    
 }
 .main-menu{
     display: none;
@@ -66,11 +77,16 @@ main{
     border-radius: 1rem;
     
 }
+.phone{
+    padding: 1rem 3rem;
+}
 #Planning,#Features,#Get-Started{
     background-color: var(--purple);
 }
 #Intro{
     padding: 0 2rem;
+    padding-top: 5rem;
+    
 }
 .card h2{
     text-align: center;
@@ -116,7 +132,10 @@ main{
     color: var(--blue);
 }
 .planning2{
-    padding: 5rem 0;
+    padding: 5rem 2rem;
+}
+.testimonial2{
+    padding: 0 2rem;
 }
 .prova{
     padding: 5rem 0;
@@ -152,6 +171,12 @@ main{
     padding: 2rem 1rem;
     margin: 2rem 0;
     border-radius: 3rem;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+
+}
+.immagine h3{
     text-align: center;
 }
 /* Testimonials */
@@ -261,6 +286,31 @@ footer p{
     #Intro .card:first-child{
         width: calc(66.66% - 1.5rem);
     }
+    .immagine{
+        display: flex;
+       flex-direction: row;
+        align-items: center;
+    }
+    .left{
+        padding-left: 2rem;
+    }
+    .immagine h3{
+        text-align: left;
+    }
+    .card3{
+        width:calc(50% - 1.5rem);
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+    .qflex{
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+    .ab{
+        display: flex;
+    }
 }
 @media screen and (min-width:1200px){
     .container{
@@ -268,6 +318,48 @@ footer p{
     }
     .Planning{
         display: flex;
-        align-items: flex-end;
+       align-items: flex-end;
     }
+    .card2 {
+        width: 300px;
+        margin-left: 5rem;
+    }
+    .card3{
+        width:calc(33.33% - 1.5rem);
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+    .qflex{
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+    .hamburger{
+        display: none;
+    }
+    .main-menu{
+        display: block;
+    }
+    .main-menu ul{
+        display: flex;
+        align-items: center;
+    }
+    .main-menu li{
+        list-style: none;
+        padding-right: 2rem;
+    }
+    li:last-child{
+        background-color: var(--white);
+        border-radius: 1rem;
+        padding: 0.5rem 2rem;
+    }
+    .nero{
+        color: black;  
+    }
+    .io{
+        display: flex;
+        
+    }
+   
 }
